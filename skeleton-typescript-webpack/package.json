@@ -73,6 +73,7 @@
     "aurelia-fetch-client": "^1.0.1",
     "aurelia-framework": "^1.0.7",
     "aurelia-history-browser": "^1.0.0",
+    "aurelia-i18n": "^1.2.1",
     "aurelia-loader-webpack": "^1.0.3",
     "aurelia-logging-console": "^1.0.0",
     "aurelia-pal-browser": "^1.0.0",
@@ -85,6 +86,8 @@
     "bluebird": "^3.4.6",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
+    "i18next-browser-languagedetector": "^1.0.1",
+    "i18next-xhr-backend": "^1.2.1",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.1.1"
   },

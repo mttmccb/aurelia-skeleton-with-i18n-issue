@@ -10,6 +10,7 @@ import * as envDev from '@easy-webpack/config-env-development';
 import * as aurelia from '@easy-webpack/config-aurelia';
 import * as typescript from '@easy-webpack/config-typescript';
 import * as html from '@easy-webpack/config-html';
+import * as json from '@easy-webpack/config-json';
 import * as css from '@easy-webpack/config-css';
 import * as fontAndImages from '@easy-webpack/config-fonts-and-images';
 import * as globalBluebird from '@easy-webpack/config-global-bluebird';
@@ -94,6 +95,7 @@ let config = generateConfig(
     envProd({ /* devtool: '...' */ }),
 
   aurelia({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
+  json(),
   typescript(ENV !== 'test' ? {} : { options: { doTypeCheck: false, sourceMap: false, inlineSourceMap: true, inlineSources: true } }),
   html(),
   css({ filename: 'styles.css', allChunks: true, sourceMap: false }),
